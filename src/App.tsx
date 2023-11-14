@@ -10,7 +10,8 @@ import UncontrolledRating from "./UncontrolledRating";
 function App() {
   return (
     <div>
-      <UncontrolledRating value={4} />
+      <OnOff/>
+      <UncontrolledRating />
       <UncontrolledAccordion titleValue={'Menu'}/>
     <PageTitle title={"This is APP component"}/>
       <PageTitle title={"My friends"}/>
@@ -22,7 +23,7 @@ function App() {
       <Rating value={3}/>
       <Rating value={4}/>
       <Rating value={5}/>
-<OnOff/>
+
 
 
     </div>
