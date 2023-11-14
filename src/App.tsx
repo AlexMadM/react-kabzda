@@ -3,10 +3,15 @@ import React from 'react';
 import './App.css';
 import Rating from "./Rating";
 import Accordion from "./Accordion";
+import OnOff from "./OnOff";
+import UncontrolledAccordion from "./UncontrolledAccordion";
+import UncontrolledRating from "./UncontrolledRating";
 
 function App() {
   return (
     <div>
+      <UncontrolledRating value={4} />
+      <UncontrolledAccordion titleValue={'Menu'}/>
     <PageTitle title={"This is APP component"}/>
       <PageTitle title={"My friends"}/>
       <Accordion titleValue={'Menu'} collapsed={true}/>
@@ -17,6 +22,7 @@ function App() {
       <Rating value={3}/>
       <Rating value={4}/>
       <Rating value={5}/>
+<OnOff/>
 
 
     </div>
@@ -35,3 +41,7 @@ function PageTitle(props:PageTitlePropsType){
 
 
 export default App;
+
+
+
+
