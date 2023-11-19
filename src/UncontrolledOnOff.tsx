@@ -37,13 +37,20 @@ const offStyle ={
         backgroundColor: on ? 'green' : 'red'
     }
 
+    const offClick=()=>{
+        setOn(false)}
+
+
+const onClicked=()=>{
+    setOn(true)
+}
 
     return (
 
 
         <div>
-            <div onClick={()=>{setOn(true)}} style={onStyle}>on</div>
-            <div onClick={()=>{setOn(false)}} style={offStyle}>Off</div>
+            <div onClick={onClicked} style={onStyle}>on</div>
+            <div onClick={offClick} style={offStyle}>Off</div>
             <div onClick={()=>{}} style={indicatorStyle}></div>
         </div>
     );
