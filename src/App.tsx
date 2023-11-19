@@ -3,17 +3,19 @@ import React, {useState} from 'react';
 import './App.css';
 import Rating, {RatingValueType} from "./Rating";
 import Accordion from "./Accordion";
-import OnOff from "./OnOff";
+import UncontrolledOnOff from "./UncontrolledOnOff";
 import UncontrolledAccordion from "./UncontrolledAccordion";
 import UncontrolledRating from "./UncontrolledRating";
+import OnOff from "./OnOff";
 
 function App() {
     let [ratingValue, setRatingValue]= useState<RatingValueType>(0);
     let [accordionCollapsed,setAccordionCollapsed]= useState<boolean>(true)
+    let [on , setOff]= useState(true)
 const acc=()=> setAccordionCollapsed(!accordionCollapsed)
   return (
     <div>
-    {/*  <OnOff/>*/}
+    {/*  <UncontrolledOnOff/>*/}
     {/*  <UncontrolledRating />*/}
     {/*  <UncontrolledAccordion titleValue={'Menu'}/>*/}
     {/*<PageTitle title={"This is APP component"}/>*/}
@@ -26,7 +28,7 @@ const acc=()=> setAccordionCollapsed(!accordionCollapsed)
       {/*<Rating value={3}/>*/}
       {/*<Rating value={4}/>*/}
       {/*<Rating value={5}/>*/}
-
+<OnOff on={on} setOff={setOff}/>
 
 
     </div>
