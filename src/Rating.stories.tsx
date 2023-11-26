@@ -1,6 +1,7 @@
 import type {Meta} from '@storybook/react';
 
-import Rating from './Rating';
+import Rating, {RatingValueType} from './Rating';
+import {useState} from "react";
 
 const meta: Meta<typeof Rating> = {
     component: Rating,
@@ -17,4 +18,9 @@ export const EmptyStars = () => {
             <Rating value={4} onClick={x => x}/>
         </>
     )
+}
+
+export const RatingChanging=()=>{
+    const [rating,setRating]=useState<RatingValueType>(3);
+    return <Rating value={rating} onClick={setRating}/>
 }
