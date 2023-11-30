@@ -1,9 +1,14 @@
+
 import type { Meta } from '@storybook/react';
 
-const meta: Meta<typeof input> = {
- component: input,
+import Input from './Input';
+
+const meta: Meta<typeof Input> = {
+ component: Input,
 };
 
 export default meta;
 
-export const Uncontrolled =()=><input/>;
+export const Collapsed =()=>{
+ return <div>collapsed</div>
+}
