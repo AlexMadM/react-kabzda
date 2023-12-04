@@ -20,7 +20,7 @@ const acc=()=> setAccordionCollapsed(!accordionCollapsed)
     {/*  <UncontrolledAccordion titleValue={'Menu'}/>*/}
     {/*<PageTitle title={"This is APP component"}/>*/}
     {/*  <PageTitle title={"My friends"}/>*/}
-      <Accordion titleValue={'Menu'}  acc={acc} accordionCollapsed={accordionCollapsed}/>
+      <Accordion titleValue={'Menu'}  accordionCollapsed={accordionCollapsed}/>
     {/*  <Accordion titleValue={'Users'} collapsed={false}/>*/}
       <Rating value={ratingValue} onClick={setRatingValue}/>
       {/*<Rating value={1}/>*/}
