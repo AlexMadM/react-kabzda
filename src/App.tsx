@@ -23,11 +23,7 @@ const acc=()=> setAccordionCollapsed(!accordionCollapsed)
       <Accordion titleValue={'Menu'}  accordionCollapsed={accordionCollapsed}/>
     {/*  <Accordion titleValue={'Users'} collapsed={false}/>*/}
       <Rating value={ratingValue} onClick={setRatingValue}/>
-      {/*<Rating value={1}/>*/}
-      {/*<Rating value={2}/>*/}
-      {/*<Rating value={3}/>*/}
-      {/*<Rating value={4}/>*/}
-      {/*<Rating value={5}/>*/}
+
 <OnOff on={on} setOff={setOff}/>
 
 
