@@ -8,9 +8,9 @@ type ItemType={
 type AccordionPropsType={
     titleValue:string
     accordionCollapsed:boolean
-    onChange:()=>void
-    items:ItemType[]
-    onClick:(value:any)=>void
+    onChange?:()=>void
+    items?:ItemType[]
+    onClick?:(value:any)=>void
 }
 
 
