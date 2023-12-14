@@ -9,9 +9,9 @@ const meta: Meta<typeof Select> = {
 
 export default meta;
 
-export const SelectBase =()=> <Select value={'1'} onChange={action('adsfasdf')} items={[
-    {value"1", title:'minsk'},
-    {value"2", title:'minsk'},
-    {value"3", title:'minsk'},
-    {value"4", title:'minsk'},
-]}/>
+// export const SelectBase =()=> <Select value={'1'} onChange={action('adsfasdf')} items={[
+//     {value"1", title:'minsk'},
+//     {value"2", title:'minsk'},
+//     {value"3", title:'minsk'},
+//     {value"4", title:'minsk'},
+// ]}/>
