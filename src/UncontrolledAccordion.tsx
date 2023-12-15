@@ -13,7 +13,7 @@ const UncontrolledAccordion = (props: AccordionPropsType) => {
     return (
         <div>
             <AccordionTitle title={props.titleValue} onClick ={()=>{dispatch({type:'TOGGLE-COLLAPSED'})}} />
-            {!state.collapsed && <AccordionBody/>}
+             {!state.collapsed && <AccordionBody/>}
         </div>
     );
 };
